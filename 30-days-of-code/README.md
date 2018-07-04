@@ -40,3 +40,36 @@ HackerRank is the best place to learn and practice coding!
 ```
 
 - [go](go/day1/main.go)
+
+## Day 2: Operators
+Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), and tax percent (the percentage of the meal price being added as tax) for a meal, find and print the meal's total cost.
+
+**Explanation**
+
+Given:
+
+`mealCost = 12, tipPercent = 20, taxPercent = 8`
+
+Calculations:
+
+```
+tip = 12 * (20 / 100) = 2.4
+tax = 12 * (8 / 100) = 0.96
+totalCost = mealCost + tip + tax = 12 + 2.4 + 0.96 = 15.36
+round(totalCost) = 15
+```
+
+`We round *totalCost* to the nearest dollar (integer) and then print our result`
+
+**Sample Input**
+```
+12.00
+20
+8
+```
+**Sample Output**
+```
+The total meal cost is 15 dollars.
+```
+
+- [go](go/day2/main.go)
