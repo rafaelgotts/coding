@@ -73,3 +73,33 @@ The total meal cost is 15 dollars.
 ```
 
 - [go](go/day2/main.go)
+
+## Day 3: Intro to Conditional Statements
+Given an integer, _n_, perform the following conditional actions:
+
+* If _n_ is odd, print Weird
+* If _n_ is even and in the inclusive range of _2_ to _5_, print Not Weird
+* If _n_ is even and in the inclusive range of _6_ to _20_, print Weird
+* If _n_ is even and greater than _20_, print Not Weird
+
+Complete the stub code provided in your editor to print whether or not _n_ is weird.
+
+**Sample Input 1**
+```
+3
+```
+**Sample Output 1**
+```
+Weird
+```
+
+**Sample Input 2**
+```
+24
+```
+**Sample Output 2**
+```
+Not Weird
+```
+
+- [go](go/day3/)
