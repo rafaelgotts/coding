@@ -103,3 +103,41 @@ Not Weird
 ```
 
 - [go](go/day3/)
+
+## Day 4: Class vs. Instance
+Write a Person class with an instance variable, _age_, and a constructor that takes an integer, _initialAge_, as a parameter.
+The constructor must assign _initialAge_ to _age_ after confirming the argument passed as _initialAge_ is not negative; if a 
+negative argument is passed as _initialAge_, the constructor should set _age_ to _0_ and print `Age is not valid, setting age to 0.`.
+In addition, you must write the following instance methods:
+
+1. yearPasses() should increase the _age_ instance variable by _1_.
+2. amIOld() should perform the following conditional actions:
+    * If _age < 13_ , print `You are young.`.
+    * If _age >= 13_ and _age < 18_, print `You are a teenager.`.
+    * Otherwise, print `You are old.`.
+
+**Sample Input**
+```
+4
+-1
+10
+16
+18
+```
+**Sample Output**
+```
+Age is not valid, setting age to 0.
+You are young.
+You are young.
+
+You are young.
+You are a teenager.
+
+You are a teenager.
+You are old.
+
+You are old.
+You are old.
+```
+
+- [go](go/day4/)
