@@ -1,6 +1,15 @@
 # 30 Days of Code
 [Hacker Rank](https://www.hackerrank.com) Practice challengers
 
+## How to run test codes:
+Change GOPATH to 30-days-of-code/go directory:
+
+```bash
+export GOPATH=<your-project-folder>/coding/30-days-of-code/go
+```
+
+Enter on directory for each day and run `go test`
+
 ## Day 0: Hello, World
 To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
 
@@ -14,7 +23,7 @@ Hello, World.
 Welcome to 30 Days of Code!
 ```
 
-- [go](go/day0/main.go)
+- [go](go/src/day0/main.go)
 
 ## Day 1: Data types
 Complete the code in the editor below. The variables *d*, *i*, and *s* are already declared and initialized for you. You must:
@@ -39,7 +48,7 @@ is the best place to learn and practice coding!
 HackerRank is the best place to learn and practice coding!
 ```
 
-- [go](go/day1/main.go)
+- [go](go/src/day1/main.go)
 
 ## Day 2: Operators
 Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), and tax percent (the percentage of the meal price being added as tax) for a meal, find and print the meal's total cost.
@@ -72,7 +81,7 @@ round(totalCost) = 15
 The total meal cost is 15 dollars.
 ```
 
-- [go](go/day2/main.go)
+- [go](go/src/day2/main.go)
 
 ## Day 3: Intro to Conditional Statements
 Given an integer, _n_, perform the following conditional actions:
@@ -102,7 +111,7 @@ Weird
 Not Weird
 ```
 
-- [go](go/day3/)
+- [go](go/src/day3/)
 
 ## Day 4: Class vs. Instance
 Write a Person class with an instance variable, _age_, and a constructor that takes an integer, _initialAge_, as a parameter.
@@ -140,4 +149,4 @@ You are old.
 You are old.
 ```
 
-- [go](go/day4/)
+- [go](go/src/day4/)
