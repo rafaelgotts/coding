@@ -1,12 +1,9 @@
 package main
 
 import (
-    "fmt"
-    "io/ioutil"
-    "os"
-    "path/filepath"
-    "strings"
     "testing"
+
+    "capturer"
 )
 
 func TestShouldCreatePersonStruct(t *testing.T) {
@@ -39,21 +36,16 @@ func TestYearPassesShouldIncrementOneYear(t *testing.T) {
 }
 
 func TestAmIOldSholdChangeMessageAge(t *testing.T) {
-    fname := filepath.Join(os.TempDir(), "stdout")
-    old := os.Stdout // keep backup of the real stdout
-    temp, _ := os.Create(fname) // create temp file
-    os.Stdout = temp
+    stdoutCapturer := capturer.NewStdoutCapturer()
+    stdoutCapturer.StartCapture()
 
     persona := NewPerson(10)
     persona.amIOld()
 
-    temp.Close()
-    os.Stdout = old
+    stdoutCapturer.StopCapture()
 
-    out, _ := ioutil.ReadFile(fname)
-    out_string := string(out)
-    fmt.Println(out_string)
-    if strings.TrimRight(out_string, "\n") != "You are young." {
+    out_string := stdoutCapturer.GetCapturedString()
+    if out_string != "You are young.\n" {
         t.Errorf("MessageAge has a wrong message. Message: %s", out_string)
     }
 }
