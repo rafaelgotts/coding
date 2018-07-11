@@ -150,3 +150,31 @@ You are old.
 ```
 
 - [go](go/src/day4/)
+
+## Day 5: Loops
+Given an integer, _n_, print its first _10_ multiples.
+Each multiple _n X i_ (where _1 <= i <= 10_) should be printed on a new line in the form: `n x i = result`.
+
+**Constraints**
+
+* _2 <= n <= 20_
+
+**Sample Input**
+```
+2
+```
+**Sample Output**
+```
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+```
+
+- [go](go/src/day5/)
