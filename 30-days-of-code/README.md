@@ -178,3 +178,69 @@ Each multiple _n X i_ (where _1 <= i <= 10_) should be printed on a new line in 
 ```
 
 - [go](go/src/day5/)
+
+## Day 6: Let's Review
+Given a string, _S_, of length _N_ that is indexed from _0_ to _N - 1_, print its even-indexed and odd-indexed characters as _2_ space-separated strings on a single line.
+
+**Note:** _0_ is considered to be an even index
+
+**Input format**
+
+The first line contains an integer, _T_ (the number of test cases). 
+Each line _i_ of the _T_ subsequent lines contain a String, _S_.
+
+**Constraints**
+
+* _1 <= T <= 10_
+* _2 <= length of S <= 10000_
+
+**Output format**
+
+For each String _Sj_ (where _0 <= j <= T - 1_), print _Sj_'s even-indexed characters, followed by a space, followed by _Sj_'s odd-indexed characters.
+
+**Sample Input**
+```
+2
+Hacker
+Rank
+```
+**Sample Output**
+```
+Hce akr
+Rn ak
+```
+
+**Explanation**
+
+Test Case 0: _S = "Hacker"_ 
+
+_S[0] = "H"_
+
+_S[1] = "a"_
+
+_S[2] = "c"_
+
+_S[3] = "k"_
+
+_S[4] = "e"_
+
+_S[5] = "r"_
+
+
+The even indices are _0_, _2_, and _4_, and the odd indices are _1_, _3_, and _5_.
+We then print a single line of _2_ space-separated strings; the first string contains the ordered characters from _S_'s even indices (**Hce**), and the second string contains the ordered characters from _S_'s odd indices (**akr**).
+
+Test Case 1:  _S = "Rank"_
+
+_S[0] = "R"_ 
+
+_S[1] = "a"_ 
+
+_S[2] = "n"_ 
+
+_S[3] = "k"_ 
+
+The even indices are _0_ and _2_, and the odd indices are _1_ and _3_.
+We then print a single line of _2_ space-separated strings; the first string contains the ordered characters from _S_'s even indices (**Rn**), and the second string contains the ordered characters from _S_'s odd indices (**ak**).
+
+- [go](go/src/day6/)
