@@ -244,3 +244,23 @@ The even indices are _0_ and _2_, and the odd indices are _1_ and _3_.
 We then print a single line of _2_ space-separated strings; the first string contains the ordered characters from _S_'s even indices (**Rn**), and the second string contains the ordered characters from _S_'s odd indices (**ak**).
 
 - [go](go/src/day6/)
+
+## Day 7: Arrays
+Given an array, _A_, of _N_ integers, print _A_'s elements in reverse order as a single line of space-separated numbers.
+
+**Input Format**
+
+The first line contains an integer, _N_ (the size of our array).
+The second line contains _N_ space-separated integers describing array _A_'s elements.
+
+**Sample Input**
+```
+4
+1 4 3 2
+```
+**Sample Output**
+```
+2 3 4 1
+```
+
+- [go](go/src/day7/)
